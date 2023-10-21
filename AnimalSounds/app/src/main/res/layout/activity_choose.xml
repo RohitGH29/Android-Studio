@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackboard"
+    tools:context=".ChooseActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celebration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="celebration.json"
+        app:lottie_speed="1" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:src="@drawable/setting_icon"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_for_seting_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_for_setting_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_for_seting_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_for_setting" />
+
+    <ImageView
+        android:id="@+id/ani"
+        android:layout_width="191dp"
+        android:layout_height="121dp"
+        android:src="@drawable/lion"
+        app:layout_constraintBottom_toTopOf="@+id/tra"
+        app:layout_constraintEnd_toStartOf="@+id/let"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/guideline_for_animal_start"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_for_seting_bottom"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/let"
+        android:layout_width="200dp"
+        android:layout_height="123dp"
+        android:src="@drawable/a"
+        app:layout_constraintBottom_toBottomOf="@+id/ani"
+        app:layout_constraintEnd_toStartOf="@+id/fru"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ani"
+        app:layout_constraintTop_toTopOf="@+id/ani" />
+
+    <ImageView
+        android:id="@+id/fru"
+        android:layout_width="189dp"
+        android:layout_height="128dp"
+        android:src="@drawable/apple"
+        app:layout_constraintBottom_toBottomOf="@+id/let"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_for_seting_start"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/let"
+        app:layout_constraintTop_toTopOf="@+id/let" />
+
+    <ImageView
+        android:id="@+id/veg"
+        android:layout_width="191dp"
+        android:layout_height="121dp"
+        android:src="@drawable/cabbage"
+        app:layout_constraintBottom_toBottomOf="@+id/num"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_for_seting_start"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num"
+        app:layout_constraintTop_toTopOf="@+id/num" />
+
+    <ImageView
+        android:id="@+id/num"
+        android:layout_width="191dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tra"
+        app:layout_constraintEnd_toStartOf="@+id/veg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tra"
+        app:layout_constraintTop_toTopOf="@+id/tra"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/tra"
+        android:layout_width="191dp"
+        android:layout_height="121dp"
+        android:src="@drawable/towtruck"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_for_animal_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/num"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/guideline_for_animal_start"
+        app:layout_constraintTop_toBottomOf="@+id/ani"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.035" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_setting_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.985" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_seting_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.938" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_seting_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13139" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_animal_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".065" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_for_animal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
