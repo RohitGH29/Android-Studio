@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "592791484998",
+    "project_id": "abcd-kids-f7174",
+    "storage_bucket": "abcd-kids-f7174.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592791484998:android:760f7e49b1a6b362352847",
+        "android_client_info": {
+          "package_name": "com.ritech.abcdkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592791484998-1dvbbml192gg1emjosktrjemfqk8u60q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvCpU7c9Ptmr2gPLdLOcX-3Y8sepj16xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592791484998-1dvbbml192gg1emjosktrjemfqk8u60q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
