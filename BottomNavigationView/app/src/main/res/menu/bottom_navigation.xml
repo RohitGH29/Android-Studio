@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_leaderBoard"
+        android:icon="@drawable/ic_leaderboard_foreground"
+        android:title="LeaderBoard"/>
+
+    <item
+        android:id="@+id/navigation_Account"
+        android:icon="@drawable/ic_account_foreground"
+        android:title="My Acoount"
+        />
+
+
+
+</menu>

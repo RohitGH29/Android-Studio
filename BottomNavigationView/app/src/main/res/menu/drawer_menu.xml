@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_leaderBoard"
+            android:icon="@drawable/ic_leaderboard_foreground"
+            android:title="LeaderBoard"/>
+
+        <item
+            android:id="@+id/nav_Account"
+            android:icon="@drawable/ic_account_foreground"
+            android:title="My Acoount"/>
+
+        <item
+            android:id="@+id/nav_Bookmark"
+            android:icon="@drawable/ic_bookmark_selected"
+            android:title="Saved Questions"/>
+
+
+    </group>
+
+    <item android:title="communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

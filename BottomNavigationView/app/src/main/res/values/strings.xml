@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quiz Kar Lo</string>
+    <string name="nav_open">Open Navigation drawer</string>
+    <string name="nav_close">Close Navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyBY3c7RFvwzs06juEg0nzIU7PVERTIV3U8</string>
+    <!-- <string name="default_web_client_id">395455030265-nl5r3in0vpv8v9afsf7o8ta8vi8pp7ii.apps.googleusercontent.com</string> -->
+
+</resources>
