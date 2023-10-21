@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "482044011946",
+    "project_id": "memes-eb076",
+    "storage_bucket": "memes-eb076.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482044011946:android:927fb9a3d174ed8e3a77d3",
+        "android_client_info": {
+          "package_name": "com.ritech.memes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482044011946-rd4pcp08ntf37fdnqrke3nsl0j1ga71j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX7-vrDzxt-DZoUGalVqdfCcSM5Olu39k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482044011946-rd4pcp08ntf37fdnqrke3nsl0j1ga71j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

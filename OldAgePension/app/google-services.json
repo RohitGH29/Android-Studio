@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873471694504",
+    "project_id": "old-age-pension-1d576",
+    "storage_bucket": "old-age-pension-1d576.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873471694504:android:d1e70a8734a7613d3c149d",
+        "android_client_info": {
+          "package_name": "com.ritech.oldagepension"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873471694504-ckesv9a03r56i2enu0esg8nagit3trcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritech.oldagepension",
+            "certificate_hash": "8042c983a6cf2f99f840835c8fc278be6a1e69c0"
+          }
+        },
+        {
+          "client_id": "873471694504-6q8if6f8ksmlsqcqt1mrtkmeqegnl4rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQhKwJdC7qm3USuI0Uqh91-l1OLrkGEIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873471694504-6q8if6f8ksmlsqcqt1mrtkmeqegnl4rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

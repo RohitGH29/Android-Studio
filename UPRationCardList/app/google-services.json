@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "859480007089",
+    "project_id": "up-ration-card-list-81aea",
+    "storage_bucket": "up-ration-card-list-81aea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859480007089:android:894d64ae6faaf7873d5d90",
+        "android_client_info": {
+          "package_name": "com.ritech.uprationcardlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859480007089-frn609an3h0d0mlb8a1ln3kfdm94e8ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritech.uprationcardlist",
+            "certificate_hash": "d52249f58915274111ec6413d50523b4c9dda2df"
+          }
+        },
+        {
+          "client_id": "859480007089-thodca1blqa79inm359fbp927225tk6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABAKraRLtctfMwGoqsqsHlCAgRbiZTLcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859480007089-thodca1blqa79inm359fbp927225tk6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

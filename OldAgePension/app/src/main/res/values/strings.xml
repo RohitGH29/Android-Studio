@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UP Pension List 2021</string>
+    <string name="old_age">वृद्धावस्था पेंशन</string>
+    <string name="divyanga">दिव्यांग पेंशन</string>
+    <string name="widow">निराश्रित महिला पेंशन</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="Facebook_banner_placement">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
+</resources>

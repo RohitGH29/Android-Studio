@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#FdF9F3"
+    android:backgroundTint="@color/dark"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#03A9F4"
+            app:cardCornerRadius="100dp">
+
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_foreground"
+                app:tint="@color/white"></ImageView>
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pause_foreground"
+                app:tint="@color/white"></ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="File name"
+        android:layout_toLeftOf="@id/date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

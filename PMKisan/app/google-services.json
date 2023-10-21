@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "778898918252",
+    "firebase_url": "https://pm-kisan-ff3d4-default-rtdb.firebaseio.com",
+    "project_id": "pm-kisan-ff3d4",
+    "storage_bucket": "pm-kisan-ff3d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778898918252:android:c81329d7a863478df8c149",
+        "android_client_info": {
+          "package_name": "com.ritech.pmkisan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778898918252-g9nuoe0u8dnd56hn3o4f4pfntlcagt70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritech.pmkisan",
+            "certificate_hash": "8e531457f96aa554a8f9701806120d182264fb29"
+          }
+        },
+        {
+          "client_id": "778898918252-co3t2los2ff8vb8ie83943b6mti6e9vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeiCLWdSfaMPhcU1vuB2H1NifLNH-ebYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778898918252-co3t2los2ff8vb8ie83943b6mti6e9vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

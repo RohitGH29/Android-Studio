@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Side Navigation Drawer</string>
+    <string name="nav_open">Open Navigation drawer</string>
+    <string name="nav_close">Close Navigation drawer</string>
+</resources>

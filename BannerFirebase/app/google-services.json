@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "203948629470",
+    "firebase_url": "https://bannerfirebase-6071c-default-rtdb.firebaseio.com",
+    "project_id": "bannerfirebase-6071c",
+    "storage_bucket": "bannerfirebase-6071c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203948629470:android:6225bbdabda4c3b19d514f",
+        "android_client_info": {
+          "package_name": "com.ritech.bannerfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203948629470-fvlk9ietgg16q6nr92r92jjfjk6nl71m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0OTaC2B-qgc-MLvqTz7f1Zi5s3uC1o3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203948629470-fvlk9ietgg16q6nr92r92jjfjk6nl71m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Call Tank</string>
+    <string name="permission_denied_contacts">Call Tank</string>
+</resources>

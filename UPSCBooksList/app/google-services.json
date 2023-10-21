@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192793318330",
+    "project_id": "upsc-books-list",
+    "storage_bucket": "upsc-books-list.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192793318330:android:c7cc83bd2ccaa326094383",
+        "android_client_info": {
+          "package_name": "com.ritech.upscbookslist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192793318330-22rguqipll4l6no9dae9punn5p4j1a4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7W6MCP3GzsWQh4DXDRwA7Y3Uowb0pIBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192793318330-22rguqipll4l6no9dae9punn5p4j1a4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

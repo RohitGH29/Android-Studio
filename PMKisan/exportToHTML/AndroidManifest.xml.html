@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>AndroidManifest.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+.s5 { color: #808080; font-style: italic;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AndroidManifest.xml</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<a name="l2"><span class="ln">2    </span></a>&lt;<span class="s4">manifest </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<a name="l3"><span class="ln">3    </span></a>    <span class="s1">package</span><span class="s3">=&quot;com.ritech.pmkisan&quot;</span>
+<a name="l4"><span class="ln">4    </span></a>    <span class="s1">android:versionCode</span><span class="s3">=&quot;1&quot;</span>
+<a name="l5"><span class="ln">5    </span></a>    <span class="s1">android:versionName</span><span class="s3">=&quot;1.0&quot; </span>&gt;
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a>    &lt;<span class="s4">uses-sdk</span>
+<a name="l8"><span class="ln">8    </span></a>        <span class="s1">android:minSdkVersion</span><span class="s3">=&quot;19&quot;</span>
+<a name="l9"><span class="ln">9    </span></a>        <span class="s1">android:targetSdkVersion</span><span class="s3">=&quot;31&quot; </span>/&gt;
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.ACCESS_NETWORK_STATE&quot; </span>/&gt;
+<a name="l12"><span class="ln">12   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.ACCESS_WIFI_STATE&quot; </span>/&gt;
+<a name="l13"><span class="ln">13   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.INTERNET&quot; </span>/&gt;
+<a name="l14"><span class="ln">14   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.WAKE_LOCK&quot; </span>/&gt;
+<a name="l15"><span class="ln">15   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE&quot; </span>/&gt;
+<a name="l16"><span class="ln">16   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.permission.AD_ID&quot; </span>/&gt; <span class="s5">&lt;!-- Android package visibility setting --&gt;</span>
+<a name="l17"><span class="ln">17   </span></a>    &lt;<span class="s4">queries</span>&gt;
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a>        <span class="s5">&lt;!-- For browser content --&gt;</span>
+<a name="l20"><span class="ln">20   </span></a>        &lt;<span class="s4">intent</span>&gt;
+<a name="l21"><span class="ln">21   </span></a>            &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.VIEW&quot; </span>/&gt;
+<a name="l22"><span class="ln">22   </span></a>
+<a name="l23"><span class="ln">23   </span></a>            &lt;<span class="s4">category </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.category.BROWSABLE&quot; </span>/&gt;
+<a name="l24"><span class="ln">24   </span></a>
+<a name="l25"><span class="ln">25   </span></a>            &lt;<span class="s4">data </span><span class="s1">android:scheme</span><span class="s3">=&quot;https&quot; </span>/&gt;
+<a name="l26"><span class="ln">26   </span></a>        &lt;/<span class="s4">intent</span>&gt;
+<a name="l27"><span class="ln">27   </span></a>        <span class="s5">&lt;!-- End of browser content --&gt;</span>
+<a name="l28"><span class="ln">28   </span></a>        <span class="s5">&lt;!-- For CustomTabsService --&gt;</span>
+<a name="l29"><span class="ln">29   </span></a>        &lt;<span class="s4">intent</span>&gt;
+<a name="l30"><span class="ln">30   </span></a>            &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.support.customtabs.action.CustomTabsService&quot; </span>/&gt;
+<a name="l31"><span class="ln">31   </span></a>        &lt;/<span class="s4">intent</span>&gt;
+<a name="l32"><span class="ln">32   </span></a>        <span class="s5">&lt;!-- End of CustomTabsService --&gt;</span>
+<a name="l33"><span class="ln">33   </span></a>    &lt;/<span class="s4">queries</span>&gt;
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.RECEIVE_BOOT_COMPLETED&quot; </span>/&gt;
+<a name="l36"><span class="ln">36   </span></a>    &lt;<span class="s4">uses-permission </span><span class="s1">android:name</span><span class="s3">=&quot;android.permission.FOREGROUND_SERVICE&quot; </span>/&gt;
+<a name="l37"><span class="ln">37   </span></a>
+<a name="l38"><span class="ln">38   </span></a>    &lt;<span class="s4">application</span>
+<a name="l39"><span class="ln">39   </span></a>        <span class="s1">android:name</span><span class="s3">=&quot;androidx.multidex.MultiDexApplication&quot;</span>
+<a name="l40"><span class="ln">40   </span></a>        <span class="s1">android:allowBackup</span><span class="s3">=&quot;true&quot;</span>
+<a name="l41"><span class="ln">41   </span></a>        <span class="s1">android:appComponentFactory</span><span class="s3">=&quot;androidx.core.app.CoreComponentFactory&quot;</span>
+<a name="l42"><span class="ln">42   </span></a>        <span class="s1">android:debuggable</span><span class="s3">=&quot;true&quot;</span>
+<a name="l43"><span class="ln">43   </span></a>        <span class="s1">android:icon</span><span class="s3">=&quot;@mipmap/ic_launcher&quot;</span>
+<a name="l44"><span class="ln">44   </span></a>        <span class="s1">android:label</span><span class="s3">=&quot;@string/app_name&quot;</span>
+<a name="l45"><span class="ln">45   </span></a>        <span class="s1">android:roundIcon</span><span class="s3">=&quot;@mipmap/ic_launcher_round&quot;</span>
+<a name="l46"><span class="ln">46   </span></a>        <span class="s1">android:supportsRtl</span><span class="s3">=&quot;true&quot;</span>
+<a name="l47"><span class="ln">47   </span></a>        <span class="s1">android:testOnly</span><span class="s3">=&quot;true&quot;</span>
+<a name="l48"><span class="ln">48   </span></a>        <span class="s1">android:theme</span><span class="s3">=&quot;@style/Theme.PMKisan&quot; </span>&gt;
+<a name="l49"><span class="ln">49   </span></a>        &lt;<span class="s4">activity </span><span class="s1">android:name</span><span class="s3">=&quot;com.ritech.pmkisan.MainActivity&quot; </span>/&gt;
+<a name="l50"><span class="ln">50   </span></a>        &lt;<span class="s4">activity </span><span class="s1">android:name</span><span class="s3">=&quot;com.ritech.pmkisan.WebViewActivity&quot; </span>/&gt;
+<a name="l51"><span class="ln">51   </span></a>        &lt;<span class="s4">activity</span>
+<a name="l52"><span class="ln">52   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.ritech.pmkisan.SplashActivity&quot;</span>
+<a name="l53"><span class="ln">53   </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;true&quot; </span>&gt;
+<a name="l54"><span class="ln">54   </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l55"><span class="ln">55   </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.MAIN&quot; </span>/&gt;
+<a name="l56"><span class="ln">56   </span></a>
+<a name="l57"><span class="ln">57   </span></a>                &lt;<span class="s4">category </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.category.LAUNCHER&quot; </span>/&gt;
+<a name="l58"><span class="ln">58   </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l59"><span class="ln">59   </span></a>        &lt;/<span class="s4">activity</span>&gt;
+<a name="l60"><span class="ln">60   </span></a>
+<a name="l61"><span class="ln">61   </span></a>        &lt;<span class="s4">meta-data</span>
+<a name="l62"><span class="ln">62   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.ads.APPLICATION_ID&quot;</span>
+<a name="l63"><span class="ln">63   </span></a>            <span class="s1">android:value</span><span class="s3">=&quot;ca-app-pub-3940256099942544~3347511713&quot; </span>/&gt;
+<a name="l64"><span class="ln">64   </span></a>
+<a name="l65"><span class="ln">65   </span></a>        &lt;<span class="s4">service</span>
+<a name="l66"><span class="ln">66   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.firebase.components.ComponentDiscoveryService&quot;</span>
+<a name="l67"><span class="ln">67   </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;true&quot;</span>
+<a name="l68"><span class="ln">68   </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l69"><span class="ln">69   </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l70"><span class="ln">70   </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar&quot;</span>
+<a name="l71"><span class="ln">71   </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;com.google.firebase.components.ComponentRegistrar&quot; </span>/&gt;
+<a name="l72"><span class="ln">72   </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l73"><span class="ln">73   </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar&quot;</span>
+<a name="l74"><span class="ln">74   </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;com.google.firebase.components.ComponentRegistrar&quot; </span>/&gt;
+<a name="l75"><span class="ln">75   </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l76"><span class="ln">76   </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar&quot;</span>
+<a name="l77"><span class="ln">77   </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;com.google.firebase.components.ComponentRegistrar&quot; </span>/&gt;
+<a name="l78"><span class="ln">78   </span></a>        &lt;/<span class="s4">service</span>&gt;
+<a name="l79"><span class="ln">79   </span></a>
+<a name="l80"><span class="ln">80   </span></a>        &lt;<span class="s4">provider</span>
+<a name="l81"><span class="ln">81   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.firebase.provider.FirebaseInitProvider&quot;</span>
+<a name="l82"><span class="ln">82   </span></a>            <span class="s1">android:authorities</span><span class="s3">=&quot;com.ritech.pmkisan.firebaseinitprovider&quot;</span>
+<a name="l83"><span class="ln">83   </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;true&quot;</span>
+<a name="l84"><span class="ln">84   </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot;</span>
+<a name="l85"><span class="ln">85   </span></a>            <span class="s1">android:initOrder</span><span class="s3">=&quot;100&quot; </span>/&gt;
+<a name="l86"><span class="ln">86   </span></a>
+<a name="l87"><span class="ln">87   </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l88"><span class="ln">88   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.measurement.AppMeasurementReceiver&quot;</span>
+<a name="l89"><span class="ln">89   </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l90"><span class="ln">90   </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l91"><span class="ln">91   </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l92"><span class="ln">92   </span></a>
+<a name="l93"><span class="ln">93   </span></a>        &lt;<span class="s4">service</span>
+<a name="l94"><span class="ln">94   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.measurement.AppMeasurementService&quot;</span>
+<a name="l95"><span class="ln">95   </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l96"><span class="ln">96   </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l97"><span class="ln">97   </span></a>        &lt;<span class="s4">service</span>
+<a name="l98"><span class="ln">98   </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.measurement.AppMeasurementJobService&quot;</span>
+<a name="l99"><span class="ln">99   </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l100"><span class="ln">100  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot;</span>
+<a name="l101"><span class="ln">101  </span></a>            <span class="s1">android:permission</span><span class="s3">=&quot;android.permission.BIND_JOB_SERVICE&quot; </span>/&gt; <span class="s5">&lt;!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. --&gt;</span>
+<a name="l102"><span class="ln">102  </span></a>        &lt;<span class="s4">activity</span>
+<a name="l103"><span class="ln">103  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.ads.AdActivity&quot;</span>
+<a name="l104"><span class="ln">104  </span></a>            <span class="s1">android:configChanges</span><span class="s3">=&quot;keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize&quot;</span>
+<a name="l105"><span class="ln">105  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot;</span>
+<a name="l106"><span class="ln">106  </span></a>            <span class="s1">android:theme</span><span class="s3">=&quot;@android:style/Theme.Translucent&quot; </span>/&gt;
+<a name="l107"><span class="ln">107  </span></a>
+<a name="l108"><span class="ln">108  </span></a>        &lt;<span class="s4">provider</span>
+<a name="l109"><span class="ln">109  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.ads.MobileAdsInitProvider&quot;</span>
+<a name="l110"><span class="ln">110  </span></a>            <span class="s1">android:authorities</span><span class="s3">=&quot;com.ritech.pmkisan.mobileadsinitprovider&quot;</span>
+<a name="l111"><span class="ln">111  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot;</span>
+<a name="l112"><span class="ln">112  </span></a>            <span class="s1">android:initOrder</span><span class="s3">=&quot;100&quot; </span>/&gt;
+<a name="l113"><span class="ln">113  </span></a>
+<a name="l114"><span class="ln">114  </span></a>        &lt;<span class="s4">service</span>
+<a name="l115"><span class="ln">115  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.ads.AdService&quot;</span>
+<a name="l116"><span class="ln">116  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l117"><span class="ln">117  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l118"><span class="ln">118  </span></a>
+<a name="l119"><span class="ln">119  </span></a>        &lt;<span class="s4">activity</span>
+<a name="l120"><span class="ln">120  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.common.api.GoogleApiActivity&quot;</span>
+<a name="l121"><span class="ln">121  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot;</span>
+<a name="l122"><span class="ln">122  </span></a>            <span class="s1">android:theme</span><span class="s3">=&quot;@android:style/Theme.Translucent.NoTitleBar&quot; </span>/&gt;
+<a name="l123"><span class="ln">123  </span></a>
+<a name="l124"><span class="ln">124  </span></a>        &lt;<span class="s4">meta-data</span>
+<a name="l125"><span class="ln">125  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;com.google.android.gms.version&quot;</span>
+<a name="l126"><span class="ln">126  </span></a>            <span class="s1">android:value</span><span class="s3">=&quot;@integer/google_play_services_version&quot; </span>/&gt;
+<a name="l127"><span class="ln">127  </span></a>
+<a name="l128"><span class="ln">128  </span></a>        &lt;<span class="s4">provider</span>
+<a name="l129"><span class="ln">129  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.startup.InitializationProvider&quot;</span>
+<a name="l130"><span class="ln">130  </span></a>            <span class="s1">android:authorities</span><span class="s3">=&quot;com.ritech.pmkisan.androidx-startup&quot;</span>
+<a name="l131"><span class="ln">131  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l132"><span class="ln">132  </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l133"><span class="ln">133  </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;androidx.emoji2.text.EmojiCompatInitializer&quot;</span>
+<a name="l134"><span class="ln">134  </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;androidx.startup&quot; </span>/&gt;
+<a name="l135"><span class="ln">135  </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l136"><span class="ln">136  </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.WorkManagerInitializer&quot;</span>
+<a name="l137"><span class="ln">137  </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;androidx.startup&quot; </span>/&gt;
+<a name="l138"><span class="ln">138  </span></a>            &lt;<span class="s4">meta-data</span>
+<a name="l139"><span class="ln">139  </span></a>                <span class="s1">android:name</span><span class="s3">=&quot;androidx.lifecycle.ProcessLifecycleInitializer&quot;</span>
+<a name="l140"><span class="ln">140  </span></a>                <span class="s1">android:value</span><span class="s3">=&quot;androidx.startup&quot; </span>/&gt;
+<a name="l141"><span class="ln">141  </span></a>        &lt;/<span class="s4">provider</span>&gt;
+<a name="l142"><span class="ln">142  </span></a>
+<a name="l143"><span class="ln">143  </span></a>        &lt;<span class="s4">service</span>
+<a name="l144"><span class="ln">144  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.SystemAlarmService&quot;</span>
+<a name="l145"><span class="ln">145  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l146"><span class="ln">146  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;@bool/enable_system_alarm_service_default&quot;</span>
+<a name="l147"><span class="ln">147  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l148"><span class="ln">148  </span></a>        &lt;<span class="s4">service</span>
+<a name="l149"><span class="ln">149  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemjob.SystemJobService&quot;</span>
+<a name="l150"><span class="ln">150  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l151"><span class="ln">151  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;@bool/enable_system_job_service_default&quot;</span>
+<a name="l152"><span class="ln">152  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;true&quot;</span>
+<a name="l153"><span class="ln">153  </span></a>            <span class="s1">android:permission</span><span class="s3">=&quot;android.permission.BIND_JOB_SERVICE&quot; </span>/&gt;
+<a name="l154"><span class="ln">154  </span></a>        &lt;<span class="s4">service</span>
+<a name="l155"><span class="ln">155  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.foreground.SystemForegroundService&quot;</span>
+<a name="l156"><span class="ln">156  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l157"><span class="ln">157  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;@bool/enable_system_foreground_service_default&quot;</span>
+<a name="l158"><span class="ln">158  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l159"><span class="ln">159  </span></a>
+<a name="l160"><span class="ln">160  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l161"><span class="ln">161  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver&quot;</span>
+<a name="l162"><span class="ln">162  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l163"><span class="ln">163  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l164"><span class="ln">164  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l165"><span class="ln">165  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l166"><span class="ln">166  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy&quot;</span>
+<a name="l167"><span class="ln">167  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l168"><span class="ln">168  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;false&quot;</span>
+<a name="l169"><span class="ln">169  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l170"><span class="ln">170  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l171"><span class="ln">171  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.ACTION_POWER_CONNECTED&quot; </span>/&gt;
+<a name="l172"><span class="ln">172  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.ACTION_POWER_DISCONNECTED&quot; </span>/&gt;
+<a name="l173"><span class="ln">173  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l174"><span class="ln">174  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l175"><span class="ln">175  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l176"><span class="ln">176  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy&quot;</span>
+<a name="l177"><span class="ln">177  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l178"><span class="ln">178  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;false&quot;</span>
+<a name="l179"><span class="ln">179  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l180"><span class="ln">180  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l181"><span class="ln">181  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.BATTERY_OKAY&quot; </span>/&gt;
+<a name="l182"><span class="ln">182  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.BATTERY_LOW&quot; </span>/&gt;
+<a name="l183"><span class="ln">183  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l184"><span class="ln">184  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l185"><span class="ln">185  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l186"><span class="ln">186  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy&quot;</span>
+<a name="l187"><span class="ln">187  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l188"><span class="ln">188  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;false&quot;</span>
+<a name="l189"><span class="ln">189  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l190"><span class="ln">190  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l191"><span class="ln">191  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.DEVICE_STORAGE_LOW&quot; </span>/&gt;
+<a name="l192"><span class="ln">192  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.DEVICE_STORAGE_OK&quot; </span>/&gt;
+<a name="l193"><span class="ln">193  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l194"><span class="ln">194  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l195"><span class="ln">195  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l196"><span class="ln">196  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy&quot;</span>
+<a name="l197"><span class="ln">197  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l198"><span class="ln">198  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;false&quot;</span>
+<a name="l199"><span class="ln">199  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l200"><span class="ln">200  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l201"><span class="ln">201  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.net.conn.CONNECTIVITY_CHANGE&quot; </span>/&gt;
+<a name="l202"><span class="ln">202  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l203"><span class="ln">203  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l204"><span class="ln">204  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l205"><span class="ln">205  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.RescheduleReceiver&quot;</span>
+<a name="l206"><span class="ln">206  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l207"><span class="ln">207  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;false&quot;</span>
+<a name="l208"><span class="ln">208  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l209"><span class="ln">209  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l210"><span class="ln">210  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.BOOT_COMPLETED&quot; </span>/&gt;
+<a name="l211"><span class="ln">211  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.TIME_SET&quot; </span>/&gt;
+<a name="l212"><span class="ln">212  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;android.intent.action.TIMEZONE_CHANGED&quot; </span>/&gt;
+<a name="l213"><span class="ln">213  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l214"><span class="ln">214  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l215"><span class="ln">215  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l216"><span class="ln">216  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver&quot;</span>
+<a name="l217"><span class="ln">217  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l218"><span class="ln">218  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;@bool/enable_system_alarm_service_default&quot;</span>
+<a name="l219"><span class="ln">219  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>&gt;
+<a name="l220"><span class="ln">220  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l221"><span class="ln">221  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.background.systemalarm.UpdateProxies&quot; </span>/&gt;
+<a name="l222"><span class="ln">222  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l223"><span class="ln">223  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l224"><span class="ln">224  </span></a>        &lt;<span class="s4">receiver</span>
+<a name="l225"><span class="ln">225  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.work.impl.diagnostics.DiagnosticsReceiver&quot;</span>
+<a name="l226"><span class="ln">226  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;false&quot;</span>
+<a name="l227"><span class="ln">227  </span></a>            <span class="s1">android:enabled</span><span class="s3">=&quot;true&quot;</span>
+<a name="l228"><span class="ln">228  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;true&quot;</span>
+<a name="l229"><span class="ln">229  </span></a>            <span class="s1">android:permission</span><span class="s3">=&quot;android.permission.DUMP&quot; </span>&gt;
+<a name="l230"><span class="ln">230  </span></a>            &lt;<span class="s4">intent-filter</span>&gt;
+<a name="l231"><span class="ln">231  </span></a>                &lt;<span class="s4">action </span><span class="s1">android:name</span><span class="s3">=&quot;androidx.work.diagnostics.REQUEST_DIAGNOSTICS&quot; </span>/&gt;
+<a name="l232"><span class="ln">232  </span></a>            &lt;/<span class="s4">intent-filter</span>&gt;
+<a name="l233"><span class="ln">233  </span></a>        &lt;/<span class="s4">receiver</span>&gt;
+<a name="l234"><span class="ln">234  </span></a>
+<a name="l235"><span class="ln">235  </span></a>        &lt;<span class="s4">service</span>
+<a name="l236"><span class="ln">236  </span></a>            <span class="s1">android:name</span><span class="s3">=&quot;androidx.room.MultiInstanceInvalidationService&quot;</span>
+<a name="l237"><span class="ln">237  </span></a>            <span class="s1">android:directBootAware</span><span class="s3">=&quot;true&quot;</span>
+<a name="l238"><span class="ln">238  </span></a>            <span class="s1">android:exported</span><span class="s3">=&quot;false&quot; </span>/&gt;
+<a name="l239"><span class="ln">239  </span></a>    &lt;/<span class="s4">application</span>&gt;
+<a name="l240"><span class="ln">240  </span></a>
+<a name="l241"><span class="ln">241  </span></a>&lt;/<span class="s4">manifest</span>&gt;</pre>
+</body>
+</html>

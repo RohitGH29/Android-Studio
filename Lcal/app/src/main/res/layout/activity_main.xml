@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/yourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#636060"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHighlight="#EFE480"
+        android:textColorHint="#1B1A1A" />
+
+    <EditText
+        android:id="@+id/partnername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#636060"
+        android:ems="10"
+        android:hint="Partner name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHighlight="#EFE480"
+        android:textColorHint="#1C1B1B" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>

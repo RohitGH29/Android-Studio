@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PM Kisan Samman Nidhi</string>
+    <string name="registration">नया पंजीकरण</string>
+    <string name="home">Home</string>
+    <string name="beneficiary_status">लाभार्थी की स्थिति</string>
+    <string name="aadhaar">Edit Aadhaar Records</string>
+    <string name="list">लाभार्थी सूची</string>
+    <string name="apps">More Apps</string>
+    <string name="about">क्या है पीएम किसान योजना?</string>
+    <string name="details">प्रधानमंत्री किसान सम्मान निधि योजना केंद्र सरकार द्वारा चलाई जा रही एक खास योजना है, जिसके तहत किसानों को हर साल 6 हजार रुपये आर्थिक सहायता के रूप में दिए जाते हैं। इस योजना के तहत ये 6 हजार रुपये सालभर में तीन किस्तों में किसानों के खाते में भेजे जाते हैं। यानी तीन बार में दो-दो हजार रुपये की किस्त सीधे लाभार्थी किसानों के अकाउंट में आती है।</string>
+
+
+</resources>

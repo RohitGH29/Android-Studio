@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Train Pnr Status</string>
+    <string name="pnr_status">Pnr Status</string>
+    <string name="train_schedule">Train Schedule</string>
+    <string name="between">Trains Between Two Stations</string>
+    <string name="running">Train Running Status</string>
+</resources>
