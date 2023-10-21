@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "395455030265",
+    "project_id": "quiz-kar-lo",
+    "storage_bucket": "quiz-kar-lo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395455030265:android:9e93bc7d5b72d2902ad328",
+        "android_client_info": {
+          "package_name": "com.ritech.quizkarlo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395455030265-bmp7kh0fbifgjlap4bp6v1ot6k2f22t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritech.quizkarlo",
+            "certificate_hash": "39f2c6f0e9543764307c4c72557b3800529c1dd7"
+          }
+        },
+        {
+          "client_id": "395455030265-loj2lga1sbt7b5me1lrd367k2tvqpin4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritech.quizkarlo",
+            "certificate_hash": "d52249f58915274111ec6413d50523b4c9dda2df"
+          }
+        },
+        {
+          "client_id": "395455030265-nl5r3in0vpv8v9afsf7o8ta8vi8pp7ii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzaJNUtrKo0EUUYDPFWBqRT0b_4uXaj9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395455030265-nl5r3in0vpv8v9afsf7o8ta8vi8pp7ii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
