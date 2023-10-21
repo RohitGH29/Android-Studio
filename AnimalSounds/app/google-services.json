@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083789847086",
+    "project_id": "animal-sounds-262fb",
+    "storage_bucket": "animal-sounds-262fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083789847086:android:4c3b2265b16146e2394dbf",
+        "android_client_info": {
+          "package_name": "com.ritech.animalsounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083789847086-vcthfmfh6rb5hcjtc50p7aai2qiunkgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtXSOulLxdlbJfmhuBByf_Ll7Q4V77Lps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083789847086-vcthfmfh6rb5hcjtc50p7aai2qiunkgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
