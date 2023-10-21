@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813618573952",
+    "project_id": "status-downloader-7937c",
+    "storage_bucket": "status-downloader-7937c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813618573952:android:f6fb86053d206d7aa02c65",
+        "android_client_info": {
+          "package_name": "com.ritech.statusdownloader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7o9p3wDCpAzaMGCmpvLdrR_qpzoLaYvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
