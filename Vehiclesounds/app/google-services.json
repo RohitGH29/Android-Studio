@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083044219301",
+    "project_id": "vehicle-sounds-7faf8",
+    "storage_bucket": "vehicle-sounds-7faf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083044219301:android:e57aa3f133aee66a8ec04c",
+        "android_client_info": {
+          "package_name": "com.ritech.vehiclesounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083044219301-5vdv31k6fgn3smsdl95qohoojv139s2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG4nQo1nCcwLBteYPxfwkx7-LP4WwMiso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083044219301-5vdv31k6fgn3smsdl95qohoojv139s2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
