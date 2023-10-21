@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_250sdp"
+    app:cardBackgroundColor="#F48D86"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_25sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oops Time Out"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/btn_try_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:background="@drawable/time_out_btn_shape"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
