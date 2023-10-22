@@ -26,8 +26,16 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
+        // Check if the user is already logged in
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            // User is already logged in, redirect to the main part of the app
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+            finish(); // Finish the LoginActivity so the user can't navigate back to it
+        }
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
+
     }
 
     // Method to handle user login
@@ -47,7 +55,8 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+
                         } else {
                             Toast.makeText(LoginActivity.this, "Login failed. Please try again.", Toast.LENGTH_SHORT).show();
                         }
@@ -57,5 +66,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goToRegistration(View view) {
         startActivity(new Intent(this, RegistrationActivity.class));
+        finish();
     }
 }

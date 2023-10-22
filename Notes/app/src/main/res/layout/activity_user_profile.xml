@@ -24,10 +24,18 @@
         android:layout_marginTop="16dp"/>
 
     <Button
+        android:id="@+id/updateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/userNameEditText"
         android:layout_centerHorizontal="true"
         android:text="Update Profile"
         android:onClick="updateUserProfile"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:onClick="onLogoutClick"/>
 </RelativeLayout>
