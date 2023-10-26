@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_1">1.5dp</dimen>
+
+    <!-- Generate dimen resources from dim_2 to dim_100 -->
+    <!-- Use a loop to generate the dimens -->
+
+    <dimen name="dim_2">3dp</dimen>
+    <dimen name="dim_3">4.5dp</dimen>
+
+    <!-- Continue the pattern for dim_4 to dim_100 -->
+    <!-- The following loop generates dim_4 to dim_100 -->
+
+
+
+    <!-- Repeat the above pattern up to dim_100 -->
+
+</resources>
+
+
+
+
+
