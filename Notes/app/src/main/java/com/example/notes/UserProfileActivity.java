@@ -32,6 +32,7 @@ public class UserProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+
         mAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("users"); // Adjust the path as needed
         userEmailTextView = findViewById(R.id.userEmailTextView);

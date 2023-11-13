@@ -57,10 +57,12 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
 
+
                         } else {
-                            Toast.makeText(LoginActivity.this, "Login failed. Please try again.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Make sure email and password correct or you are register user", Toast.LENGTH_SHORT).show();
                         }
                     }
+
                 });
     }
 

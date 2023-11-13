@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784988194843",
+    "project_id": "study-material-f7e16",
+    "storage_bucket": "study-material-f7e16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784988194843:android:9440215639d25b9f5390be",
+        "android_client_info": {
+          "package_name": "com.example.studymaterial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjCz5iXlVwHjWFarLHimVmEQXUW3P18rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
