@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.Tasks;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -28,6 +29,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     int priority = note.getPriority();
 
                     data += "ID: " + documentId + "\nTitle: " + title +
-                            "\nDescription: " +  description + "\nPriority: " + priority +"\n\n";
+                            "\nDescription: " + description + "\nPriority: " + priority + "\n\n";
 
 
                 }
@@ -113,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     public void add(View view) {
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
-     //   String documentId =notebookRef.document("ai");
+        //   String documentId =notebookRef.document("ai");
         if (editTextPriority.length() == 0) {
             editTextPriority.setText("0");
         }
@@ -144,31 +146,72 @@ public class MainActivity extends AppCompatActivity {
 
     /// this is use to retrieve data from data base
     public void load(View v) {
-        // this is collect the data from root node
-        notebookRef//.whereEqualTo("priority",2) // this is use to search data for condition
-                .orderBy("priority", Query.Direction.ASCENDING)// here the data come in ascending order
-               // .limit(1)// this is used to show only limited data
-                .get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        String data = "";
-                        for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) { // this line is used to collect multiple data from database
-                            Note note = documentSnapshot.toObject(Note.class);
-                            note.setDocumentId(documentSnapshot.getId());
+        // part 11 - merge tasks to create queries
+        Task task1 = notebookRef.whereLessThan("priority", 2)
+                .orderBy("priority")
+                .get();
+        Task task2 = notebookRef.whereGreaterThan("priority", 2)
+                .orderBy("priority")
+                .get();
 
-                            String documentId = note.getDocumentId();
-                            String title = note.getTitle();
-                            String description = note.getDescription();
-                            int priority = note.getPriority();
+        Task<List<QuerySnapshot>> allTasks = Tasks.whenAllSuccess(task1, task2);
+        allTasks.addOnSuccessListener(new OnSuccessListener<List<QuerySnapshot>>() {
+            @Override
+            public void onSuccess(List<QuerySnapshot> querySnapshots) {
+                String data = "";
+                for (QuerySnapshot queryDocumentSnapshots : querySnapshots) {
+                    for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) { // this line is used to collect multiple data from database
+                        Note note = documentSnapshot.toObject(Note.class);
+                        note.setDocumentId(documentSnapshot.getId());
 
-                            data += "ID: " + documentId + "\nTitle: " + title +
-                                    "\nDescription: " +  description + "\nPriority: " + priority +"\n\n";
+                        String documentId = note.getDocumentId();
+                        String title = note.getTitle();
+                        String description = note.getDescription();
+                        int priority = note.getPriority();
 
-                        }
-                        textViewData.setText(data);
+                        data += "ID: " + documentId + "\nTitle: " + title +
+                                "\nDescription: " + description + "\nPriority: " + priority + "\n\n";
+
                     }
-                });
+                }
+                textViewData.setText(data);
+            }
+        });
+
+        // this is collect the data from root node
+//        notebookRef.whereEqualTo("priority",2) // this is use to search data for condition
+//               // .orderBy("priority", Query.Direction.ASCENDING)// here the data come in ascending order
+//                .orderBy("priority")
+//                .whereEqualTo("title","a")
+//               // .limit(1)// this is used to show only limited data
+//                .get()
+//                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+//                        Toast.makeText(MainActivity.this, "ADAD", Toast.LENGTH_SHORT).show();
+//                        String data = "";
+//                        for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) { // this line is used to collect multiple data from database
+//                            Note note = documentSnapshot.toObject(Note.class);
+//                            note.setDocumentId(documentSnapshot.getId());
+//
+//                            String documentId = note.getDocumentId();
+//                            String title = note.getTitle();
+//                            String description = note.getDescription();
+//                            int priority = note.getPriority();
+//
+//                            data += "ID: " + documentId + "\nTitle: " + title +
+//                                    "\nDescription: " +  description + "\nPriority: " + priority +"\n\n";
+//
+//                        }
+//                        textViewData.setText(data);
+//                    }
+//                })
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Log.d(TAG, "onFailure: "+e.toString());
+//                    }
+//                });
 
        /* noteRef.get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
