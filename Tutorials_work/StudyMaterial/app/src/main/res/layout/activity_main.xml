@@ -31,6 +31,14 @@
         android:inputType="number"
         android:padding="15dp" />
 
+    <EditText
+        android:id="@+id/edit_text_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags"
+        android:inputType="text"
+        android:padding="15dp" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
