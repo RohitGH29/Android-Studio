@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new RecyclerContactAdapter(this, arrContact);
         recyclerView.setAdapter(adapter);
 
+
         // this btn is used to add new contact
         addBtn();
 
