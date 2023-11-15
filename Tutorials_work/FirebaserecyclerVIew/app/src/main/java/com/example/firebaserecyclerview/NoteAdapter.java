@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.firestore.DocumentSnapshot;
 
-public class NoteAdapter extends FirestoreRecyclerAdapter<Note,NoteAdapter.NoteHolder> {
+public class NoteAdapter extends FirestoreRecyclerAdapter<Note, NoteAdapter.NoteHolder> {
 
+    private OnItemClickListener listener;
 
     public NoteAdapter(@NonNull FirestoreRecyclerOptions<Note> options) {
         super(options);
@@ -30,11 +32,15 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note,NoteAdapter.NoteH
     @Override
     public NoteHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_item
-        ,parent,false);
+                , parent, false);
         return new NoteHolder(v);
     }
 
-    class NoteHolder extends RecyclerView.ViewHolder{
+    public void deleteItem(int position) {
+        getSnapshots().getSnapshot(position).getReference().delete();
+    }
+
+    class NoteHolder extends RecyclerView.ViewHolder {
         TextView title, description, priority;
 
         public NoteHolder(@NonNull View itemView) {
@@ -42,8 +48,27 @@ public class NoteAdapter extends FirestoreRecyclerAdapter<Note,NoteAdapter.NoteH
             title = itemView.findViewById(R.id.text_view_title);
             description = itemView.findViewById(R.id.text_view_description);
             priority = itemView.findViewById(R.id.text_view_priority);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getBindingAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION && listener != null) {
+                        listener.onItemClick(getSnapshots().getSnapshot(position), position);
+                    }
+                }
+            });
         }
     }
+
+    public interface OnItemClickListener {
+        void onItemClick(DocumentSnapshot documentSnapshot, int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
+
 
 }
 
